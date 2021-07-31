@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="time.js"></script>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>LOGIN AND REGISTRY</title>
+  </head>
+  <body onload=initClock();>
+    <nav class="navbar navbar-expand-md navbar-light bg-light stiky-top" >
+      <div class="container-fluid">
+             <a class="navbar-branch" href="index.html">
+                 <img src="./image/dog.png" height="50px">
+             </a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="datetime">
+                 <div class="date">
+                       <span id="dayname">Day</span>, 
+                       <span id="month">Month</span> 
+                       <span id="daynum">00</span>, 
+                       <span id="year">Year</span> 
+                 </div>   
+                 <div class="time">
+                    <span id="hour">00</span>: 
+                    <span id="minutes">00</span>: 
+                    <span id="seconds">00</span> 
+                    <span id="period">AM</span> 
+                 </div>
+             </div>
+             <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                          <a class="nav-link" onclick="alert('I am Tran Thanh Khoa, the founder, the developer of this web ! Do you want to know more ? Click on Services, Team and Connect!')">About</a>
+                     </li>
+                     <li class="nav-item">
+                          <a class="nav-link" onclick="alert('This web can provide you quite many image about the countryside, which synthesized from many people around the world!')">Services</a>
+                     </li>
+                     <li class="nav-item">
+                          <a class="nav-link" onclick="alert('The whole team is just me right now ! Do you want to join me ? Click on connect!')">Team</a>
+                     </li>
+                     <li class="nav-item">
+                          <a class="nav-link" href="https://www.facebook.com/DraGonFestRacingBoiz/" target="_blank">Connect</a>
+                     </li>
+                  </ul>
+             </div>
+      </div>   
+ </nav>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+            <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+          <img src="img/log.svg" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
