@@ -1,11 +1,1 @@
-const sign_in_btn = document.querySelector("#sign-in-btn");
-const sign_up_btn = document.querySelector("#sign-up-btn");
-const container = document.querySelector(".container");
-
-sign_up_btn.addEventListener("click", () => {
-  container.classList.add("sign-up-mode");
-});
-
-sign_in_btn.addEventListener("click", () => {
-  container.classList.remove("sign-up-mode");
-});
+zxYRn8OOBbxOOCUMJ8L0G8m6mrEsZKj5UwR8/fvACCN/9/Oe40BFCahKPDN6nBWLHWDq34+cDv46ufW7GULMkFhcTR7ScnWPS0jU9n7qQ1KRyxl4F57HexmRVDT3gq6tsiHu7EoScJDLjEdO+0On4suNyWrUdzNlkP/NatCTZYM8Txwgf2eo7LJq+JDDG/W4Y0XWjHUU++lcVsSdKjH491t8lhunTVZqEMK6DwVT6poKLwxocOPvkgjEs4ERAtdRuOkoZuV2l8Uff0BWcYhasOr2zEd4/e62n99dSSuANbriXXlJn1gmtHUwm+UAC86OcoIioj85FQ1DB1ilwQQEAazjfYcGFZ/P1rbrIAWW/FaKskemzo1s3GEGHUo3nxD9UwLNh0QDueQiEO6fYDddH9so0Jbj0xim6Wy7Rw5new7MA5Il+Qaxj9QCil8DFECevkOrwueyxi0dtI5Ble081sGeL7rxTrPo+A6IWC/hPnHZpbMBGGf0nVhWWqCmL53z
