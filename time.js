@@ -40,3 +40,46 @@
       document.addEventListener("contextmenu", function(e){
     e.preventDefault();
 }, false);    
+
+//block key
+const webpack = require('webpack');
+const path = require('path');
+
+const isProd = NODE_ENV === 'production';
+const ifProd = x => isProd && x;
+const removeEmpty = arr => arr.filter(Boolean);
+
+module.exports = {
+    entry: './index.js',
+    output: {
+        path: path.resolve(__dirname, 'build'),
+        publicPath: '/',
+        filename: '[name].js',
+    },
+    module: {
+        rules: [
+            // loaders configuration
+        ],
+    },
+    optimization: {
+        noEmitOnErrors: true,
+        minimizer: removeEmpty([
+            ifProd(new UglifyJsPlugin({
+                // this one is important
+                sourceMap: true,
+            })),
+        ]),
+    },
+    // devTool option is not needed anymore for prod
+    // but for development it's just easier to use then SourceMapDevToolPlugin
+    devtool: isProd ? false : 'cheap-module-eval-source-map',
+    // we gonna use this plugin:
+    plugins: [
+        // ... other plugins
+        ifProd(new webpack.SourceMapDevToolPlugin({
+            // this is the url of our local sourcemap server
+            publicPath: 'https://localhost:5050/',
+            filename: '[file].map',
+        })),
+    ]
+};
