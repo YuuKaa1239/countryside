@@ -1,11 +1,1 @@
-const sign_in_btn = document.querySelector("#sign-in-btn");
-const sign_up_btn = document.querySelector("#sign-up-btn");
-const container = document.querySelector(".container");
-
-sign_up_btn.addEventListener("click", () => {
-  container.classList.add("sign-up-mode");
-});
-
-sign_in_btn.addEventListener("click", () => {
-  container.classList.remove("sign-up-mode");
-});
+const a=['addEventListener','#sign-in-btn','sign-up-mode','2942ufmlPw','80795zOfgwH','1VbFnEg','click','add','classList','#sign-up-btn','151419tdUVJZ','208351QpxMbm','querySelector','160994egPBTg','1BnLiqH','6553xqzdpF','14QUDXwf','.container','remove','215937XgdGuQ'];const h=b;(function(c,d){const g=b;while(!![]){try{const e=parseInt(g(0x1b7))+-parseInt(g(0x1be))+-parseInt(g(0x1c0))+parseInt(g(0x1b8))*-parseInt(g(0x1c2))+parseInt(g(0x1b2))*parseInt(g(0x1c1))+-parseInt(g(0x1b6))*-parseInt(g(0x1c3))+parseInt(g(0x1bd));if(e===d)break;else c['push'](c['shift']());}catch(f){c['push'](c['shift']());}}}(a,0x1bb21));const sign_in_btn=document['querySelector'](h(0x1b4)),sign_up_btn=document[h(0x1bf)](h(0x1bc)),container=document['querySelector'](h(0x1c4));function b(c,d){return b=function(e,f){e=e-0x1b1;let g=a[e];return g;},b(c,d);}sign_up_btn[h(0x1b3)](h(0x1b9),()=>{const i=h;container[i(0x1bb)][i(0x1ba)]('sign-up-mode');}),sign_in_btn['addEventListener']('click',()=>{const j=h;container[j(0x1bb)][j(0x1b1)](j(0x1b5));});
